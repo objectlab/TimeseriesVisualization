@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="timeseries.css">
+
+
+
+<!-- update speed slider -->
+<div class="controls-container">
+	<div class="control-label">
+		Update every: <span id="slider-value">2500</span> ms
+	</div>
+	<div id="update-speed-slider"></div>
+</div>
+
+<!-- bar width spinner -->
+<div class="controls-container">
+	<div class="control-label">
+		Bar width:
+	</div>
+	<input id="bar-width-spinner" class="spinner" value="6">
+</div>
+
+<!-- sample count spinners -->
+<div class="controls-container">
+	<div class="control-label">
+		Sample counts:
+	</div>
+	<label>2H </label><input id="2h-count-spinner" class="spinner count-spinner" value="24">
+	<label>1H </label><input id="1h-count-spinner" class="spinner count-spinner" value="24">
+	<label>1M </label><input id="1m-count-spinner" class="spinner count-spinner" value="60">
+	<button id="refresh-button">Redraw</button>
+</div>
+
+<div id="viz" style="clear: both"></div>
+
+
+
+
+<!-- libs -->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<!-- demo -->
+<script src="timeseries.js"></script>
+
+
+
+</body>

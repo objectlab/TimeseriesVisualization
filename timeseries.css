@@ -1,0 +1,97 @@
+body {
+    font: 10px sans-serif;
+    margin: 0;
+}
+
+rect {
+    shape-rendering: crispEdges;
+}
+
+.feed {
+    padding: 20px 0 20px 20px;
+    border-bottom: dotted 1px #DDDDDD;
+}
+
+.feed line {
+    stroke-width: 1px;
+    stroke: #DDDDDD;
+    shape-rendering: crispEdges;
+}
+
+.feed .label-bg {
+    fill: #FFFFFF;
+}
+
+.feed .feed-name-label {
+    font-size: 20px;
+}
+
+.feed .int-label {
+    font-size: 10px;
+    fill: #999999;
+}
+
+.feed .totals-label,
+.feed .status-label,
+.feed .stale-threshold-label {
+    font-size: 11px;
+}
+
+.feed .feed-timestamp-label {
+    font-size: 10px;
+}
+
+.feed .totals-count-label,
+.feed .count-label,
+.feed .stale-label {
+    font-size: 18px;
+}
+
+.feed .feed-name-label,
+.feed .feed-timestamp-label {
+    fill: #4A4A4A;
+}
+
+.feed .mouseeventbars .bar {
+    fill: #DDD;
+    opacity: 0;
+}
+
+.feed .mouseeventbars .bar.highlight {
+    opacity: 0.5;
+}
+
+.controls-container {
+    margin: 10px 20px 30px 20px;
+    color: #666666;
+    display: inline-block;
+    float: left;
+}
+
+.control-label {
+    font-size: 1.6em;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+#slider-value {
+    font-weight: 600;
+}
+
+#update-speed-slider {
+    margin-top: 8px;
+    width: 300px;
+}
+
+.spinner {
+    width: 30px;
+}
+
+.controls-container input {
+    width: 30px;
+    height: 20px;
+}
+
+.ui-button-text-only .ui-button-text {
+    font-size: 1.12em;
+}
