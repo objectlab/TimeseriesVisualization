@@ -16,4 +16,4 @@ For the demo I added ui controls that allow you to change the update speed, the 
 [See Live Demo &#187;](http://objectlab.github.io/demo/timeseries/)
 
 
-![Visualization](/timeseries/timeseries.gif)
+![Visualization](/timeseries.gif)
