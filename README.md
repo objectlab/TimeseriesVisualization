@@ -1,4 +1,4 @@
-D3 Time Series - Visualizing System Performance
+Visualizing System Performance
 =======================
 
 Sony Music's digital supply chain manages the delivery of media assets and metadata to the company's distribution partners.
