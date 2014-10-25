@@ -758,10 +758,6 @@ function updateStatus(status) {
         return d.count;
     })]);
 
-    // calibrate the count and stale color scale domains
-    // TODO this needs to be calibrated based on the confuration from each status
-    cColorScale.domain([50, 75]);
-    sColorScale.domain([50, 75]);
 
     // update count bars
     statusGrp.selectAll('.c-bar')
