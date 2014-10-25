@@ -199,15 +199,15 @@ function drawViz() {
             return d.dspId;
         })
         .enter()
-        .append("div")
-        .attr("class", "feed")
-        .append("svg")
-        .attr("width", svgw)
-        .attr("height", function (d) {
-            return (d.statuses.length * ch) + th + cp + tcp;
-        })
-        .call(drawIntervalGrid)
-        .call(drawFeedLabels);
+            .append("div")
+            .attr("class", "feed")
+            .append("svg")
+            .attr("width", svgw)
+            .attr("height", function (d) {
+                return (d.statuses.length * ch) + th + cp + tcp;
+            })
+            .call(drawIntervalGrid)
+            .call(drawFeedLabels);
 
 
     // add the totals chart
@@ -511,16 +511,16 @@ function drawTotals(feedData) {
             return d.time;
         })
         .enter().append("rect")
-        .attr("class", "block")
-        .style("fill", function (d) {
-            return tColorScale(d.count);
-        })
-        .attr("y", function (d) {
-            return th - ytScale(d.count);
-        })
-        .attr("width", bw - bp)
-        .attr("height", tbh)
-        .call(xpos);
+            .attr("class", "block")
+            .style("fill", function (d) {
+                return tColorScale(d.count);
+            })
+            .attr("y", function (d) {
+                return th - ytScale(d.count);
+            })
+            .attr("width", bw - bp)
+            .attr("height", tbh)
+            .call(xpos);
 
 }
 
@@ -543,18 +543,18 @@ function drawStatus(statusData) {
             return d.time;
         })
         .enter().append("rect")
-        .attr("class", "c-bar")
-        .style("fill", function (d) {
-            return cColorScale(d.count);
-        })
-        .attr("y", function (d) {
-            return ch - yScale(d.count) - .5;
-        })
-        .attr("width", bw - bp)
-        .attr("height", function (d) {
-            return yScale(d.count);
-        })
-        .call(xpos);
+            .attr("class", "c-bar")
+            .style("fill", function (d) {
+                return cColorScale(d.count);
+            })
+            .attr("y", function (d) {
+                return ch - yScale(d.count) - .5;
+            })
+            .attr("width", bw - bp)
+            .attr("height", function (d) {
+                return yScale(d.count);
+            })
+            .call(xpos);
 
     // add stale bars for each value
     statusGrp.selectAll(".s-bar")
@@ -562,18 +562,18 @@ function drawStatus(statusData) {
             return d.time;
         })
         .enter().append("rect")
-        .attr("class", "s-bar")
-        .style("fill", function (d) {
-            return sColorScale(d.count);
-        })
-        .attr("y", function (d) {
-            return ch - yScale(d.stale) - .5;
-        })
-        .attr("width", bw - bp)
-        .attr("height", function (d) {
-            return yScale(d.stale);
-        })
-        .call(xpos);
+            .attr("class", "s-bar")
+            .style("fill", function (d) {
+                return sColorScale(d.count);
+            })
+            .attr("y", function (d) {
+                return ch - yScale(d.stale) - .5;
+            })
+            .attr("width", bw - bp)
+            .attr("height", function (d) {
+                return yScale(d.stale);
+            })
+            .call(xpos);
 
 }
 
