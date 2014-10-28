@@ -1,9 +1,7 @@
 Visualizing System Performance
 =======================
 
-Sony Music's digital supply chain manages the delivery of media assets and metadata to the company's distribution partners.
-The team managing this process needed a real time and historic view into the performance of these systems with the primary
-objective of mitigating system downtime and identifying current and developing delivery activity issues.
+This is a prototype developed for a major music company to visualize supply chain system performance, more specifically the delivery of media assets and metadata to the company's digital distribution partners. The team managing this process needed a real time and historic view into the performance of these systems with the primary objective of mitigating system downtime and identifying current and developing delivery activity issues.
 
 - Total package counts and packaging status for distribution partners are visualized with time series bar charts
 - The past 60 minutes are shown to the right with rolled up hourly and 2 hour history to the left
